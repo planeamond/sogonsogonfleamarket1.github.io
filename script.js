@@ -50,5 +50,5 @@ document.querySelectorAll('.mat1').forEach((mat, index) => {
 });
 
 
-const sound = new Audio('Great Is Thy Faithfulness.mp3');
+const sound = new Audio('sound/sound.mp3');
 
