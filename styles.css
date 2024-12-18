@@ -1,0 +1,163 @@
+#mat{
+    width: 1140px;
+    height: 660px;
+    position: relative;
+
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mat1{
+    width: 120px;
+    height: 120px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mat2{rotate: -5deg;}
+.mat3{rotate: 5deg;}
+
+/* .group1 {cursor: url(cursor1.png), auto;}
+.group2 {cursor: url(cursor2.png), auto;}
+.group3 {cursor: url(cursor3.png), auto;}
+.group4 {cursor: url(cursor4.png), auto;}
+.group5 {cursor: url(cursor5.png), auto;}
+.group6 {cursor: url(cursor6.png), auto;} */
+
+/* 1 */
+.mat1:nth-child(1){
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mat1:nth-child(2){
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.mat1:nth-child(3){
+    background-color: white;
+    position: absolute;
+    top: 240px;
+    left: 0;
+}
+
+/* 2 */
+.mat1:nth-child(4){
+    background-color: white;
+    position: absolute;
+    top: 420px;
+    left: 0;
+}
+.mat1:nth-child(5){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 0;
+}
+.mat1:nth-child(6){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 120px;
+}
+.mat1:nth-child(7){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 240px;
+}
+.mat1:nth-child(8){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 360px;
+}
+.mat1:nth-child(9){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 480px;
+}
+
+/* 3 */
+.mat1:nth-child(10){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 700px;
+}
+.mat1:nth-child(11){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 820px;
+}
+
+/* 4 */
+.mat1:nth-child(12){
+    background-color: white;
+    position: absolute;
+    top: 540px;
+    left: 1020px;
+}
+.mat1:nth-child(13){
+    background-color: white;
+    position: absolute;
+    top: 420px;
+    left: 1020px;
+}
+.mat1:nth-child(14){
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 1020px;
+}
+
+/* 5 */
+.mat1:nth-child(15){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 1020px;
+}
+.mat1:nth-child(16){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+}
+.mat1:nth-child(17){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 780px;
+}
+.mat1:nth-child(18){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 660px;
+}
+
+/* 6 */
+.mat1:nth-child(19){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 460px;
+}
+.mat1:nth-child(20){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 340px;
+}
+.mat1:nth-child(21){
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+}
+

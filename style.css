@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     width: 100vw;
@@ -8,68 +13,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-
-    font-family: "Noto Sans KR", sans-serif;
+    background-color: #A3D22F;
+    font-family: 'ChosunGu';
+    font-weight: normal;
     font-style: normal;
+
+    background-image: url(bg.jpeg);
+    background-size: cover;
 }
+
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-#mat {
-    display: flex;
-    flex-wrap: wrap; /* 여러 줄로 요소를 나열 */
-    justify-content: center; /* 가로 방향 정렬 */
-    width: 85%;
-    gap: 10px; /* 아이템 간격 */
-    padding: 100px 0; /* 패딩 제거 */
-    margin: auto 0; /* 마진 제거 */
+
+img {
+    width: 100%; /* 이미지 너비를 100%로 설정 */
+    height: 100%; /* 이미지 높이를 100%로 설정 */
+    object-fit: cover; /* 영역을 채우는 방식 */
+    object-position: center center; /* 이미지가 중앙에 위치하도록 설정 */
 }
 
-.mat1 {
-    width: 200px;
-    height: 200px;
-    position: relative; /* 부모 기준으로 자식 요소 배치 */
-    perspective: 800px; /* 3D 효과 */
-    overflow: hidden; /* 이미지가 밖으로 나가지 않도록 */
+#text {
+    width: 100vw;
+    height: 100vh;
 
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.6;
-  
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.front, .back {
-    width: 100%;
-    height: 100%;
+    z-index: 100;
     position: absolute;
     display: flex;
-    justify-content: center;
-    backface-visibility: hidden; /* 뒷면 숨김 */
-    transition: transform 0.3s;
-}
-
-.front {
-    background-color: white;
-    color: green;
-    transform: rotateY(0deg); /* 기본 상태 */
-}
-
-.back {
-    background-color: lightgray;
-    color: black;
     align-items: center;
-    transform: rotateY(180deg); /* 뒷면 상태 */
-    
+    justify-content: center;
+
+
+    pointer-events: none;
 }
 
-.mat1:hover .front {transform: rotateY(-180deg); /* 앞면 뒤집힘 */}
-.mat1:hover .back {transform: rotateY(0deg); /* 뒷면 보임 */}
+.text {
+    max-width: 240px;
+    word-break: keep-all;
 
-img{width: 200px; height: 200px;}
+    font-size: 13px;
+    text-align: center;
+    
+    line-height: 1.6;
 
-.text {padding-left: 16px; padding-right: 16px; }
-.text b {margin-bottom: 4px; display: inline-block;}
+    display: none;}
+
+.text b {
+    font-size: 16px;
+    line-height: 2.0;
+    padding-bottom: 10px;
+}
