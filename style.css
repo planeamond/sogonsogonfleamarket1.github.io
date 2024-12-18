@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#mat {
+    display: flex;
+    flex-wrap: wrap; /* 여러 줄로 요소를 나열 */
+    justify-content: center; /* 가로 방향 정렬 */
+    width: 85%;
+    gap: 10px; /* 아이템 간격 */
+    padding: 100px 0; /* 패딩 제거 */
+    margin: auto 0; /* 마진 제거 */
+}
+
+.mat1 {
+    width: 200px;
+    height: 200px;
+    position: relative; /* 부모 기준으로 자식 요소 배치 */
+    perspective: 800px; /* 3D 효과 */
+    overflow: hidden; /* 이미지가 밖으로 나가지 않도록 */
+
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+  
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    backface-visibility: hidden; /* 뒷면 숨김 */
+    transition: transform 0.3s;
+}
+
+.front {
+    background-color: white;
+    color: green;
+    transform: rotateY(0deg); /* 기본 상태 */
+}
+
+.back {
+    background-color: lightgray;
+    color: black;
+    align-items: center;
+    transform: rotateY(180deg); /* 뒷면 상태 */
+    
+}
+
+.mat1:hover .front {transform: rotateY(-180deg); /* 앞면 뒤집힘 */}
+.mat1:hover .back {transform: rotateY(0deg); /* 뒷면 보임 */}
+
+img{width: 200px; height: 200px;}
+
+.text {padding-left: 16px; padding-right: 16px; }
+.text b {margin-bottom: 4px; display: inline-block;}
